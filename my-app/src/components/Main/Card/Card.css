@@ -1,0 +1,24 @@
+.card-conteiner {
+    margin: 20px;
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.card-information {
+    margin-left: 10px;
+}
+.card-title {
+text-align: center;
+}
+.card-location {
+
+}
+.card-square {
+
+}
+.card-rooms {
+
+}
+.card-price {
+    text-align: center;
+    color: rgb(38, 162, 29);
+}

@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-as{
+margin: 0 auto ;
+
+}
+.about-us-link {
+ text-decoration: none;
+ color: black;
+}
+.dreamhouse-link {
+    color: black;
+    text-decoration: none;
+}
