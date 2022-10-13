@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import AboutAs from './components/AboutAs/AboutAs';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Form from './components/Form/Form';
 
 function App(): JSX.Element {
   const a: string = ''
@@ -18,6 +19,7 @@ function App(): JSX.Element {
           <Routes>
             <Route path="/DreamHouse" element={ <Main />} />
             <Route path="/about" element={<AboutAs />} />
+            <Route path="/form" element={<Form />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -4,9 +4,12 @@ import apartmentData from '../../data/data';
 import Card from './Card/Card';
 import { search } from '../../data/index';
 
-
+interface IState {
+  stateInputValue: string
+}
 class Main extends React.Component<{}, { stateInputValue: string }> {
   localInputValue: string | null
+  state: IState
   constructor() {
     super('');
     this.localInputValue = localStorage.getItem('searchValue');
@@ -24,7 +27,7 @@ class Main extends React.Component<{}, { stateInputValue: string }> {
   }
 
   render(): React.ReactNode {
-    const { stateInputValue } = this.state 
+    const { stateInputValue } = this.state
     return (
       <div className="main">
         <div className='input-button-conteiner'>
