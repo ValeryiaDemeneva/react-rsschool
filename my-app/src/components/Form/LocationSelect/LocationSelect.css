@@ -1,0 +1,10 @@
+.location-title {
+    margin-bottom: 3px;
+    color:rgb(146, 195, 146);
+    margin-top: 7px;
+}
+.location-select {
+    border: 1px solid rgb(146, 195, 146);
+    width: 260px;
+    height: 35px;
+}
