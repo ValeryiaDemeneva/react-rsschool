@@ -1,6 +1,6 @@
 import React from "react";
 import './Card.css';
-import img from '../../../assets/image/5.jpeg'
+
 
 const Card = (props: any): JSX.Element => {
     return (

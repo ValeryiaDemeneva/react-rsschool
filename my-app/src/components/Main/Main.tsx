@@ -1,29 +1,54 @@
-import React, { Component } from "react";
+import React from "react";
 import './Main.css';
 import apartmentData from '../../data/data';
 import Card from './Card/Card';
-import { search } from '../../data/index';
+
 
 interface IState {
   stateInputValue: string
 }
+
+interface ICard {
+  image: string,
+  name: string,
+  location: string,
+  square: string
+  rooms: string,
+  price: string,
+}
 class Main extends React.Component<{}, { stateInputValue: string }> {
   localInputValue: string | null
   state: IState
+  apartmentData: ICard[]
   constructor() {
     super('');
     this.localInputValue = localStorage.getItem('searchValue');
+    this.apartmentData = apartmentData
     this.state = {
       stateInputValue: this.localInputValue ? this.localInputValue : ''
     };
     this.onInputchange = this.onInputchange.bind(this);
+    this.onClickSearch = this.onClickSearch.bind(this);
+
   }
+
 
   onInputchange(event: React.ChangeEvent<HTMLInputElement>) {
     this.setState({
       stateInputValue: event.target.value
     });
     localStorage.setItem('searchValue', event.target.value);
+  }
+
+  componentDidUpdate(prevState: IState) {
+    if (prevState.stateInputValue !== this.state.stateInputValue) {
+      this.apartmentData = apartmentData.filter(item => item.name.toUpperCase() === this.state.stateInputValue.toUpperCase())
+
+    }
+  }
+
+  onClickSearch() {
+    this.apartmentData = apartmentData.filter(item => item.name.toUpperCase() === this.state.stateInputValue.toUpperCase())
   }
 
   render(): React.ReactNode {
@@ -38,12 +63,10 @@ class Main extends React.Component<{}, { stateInputValue: string }> {
               onChange={this.onInputchange}
               value={stateInputValue}
             />
-            <img src={search} className='search-image' ></img>
           </div>
-          <button className='search-button'>search</button>
-        </div>
+          </div>
         <div className='cards'>
-          {apartmentData.map((i) => (
+          {this.apartmentData.map((i) => (
             <Card
               image={i.image}
               name={i.name}

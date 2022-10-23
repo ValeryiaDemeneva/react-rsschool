@@ -20,7 +20,6 @@ import img18 from "../assets/image/18.jpeg";
 import img19 from "../assets/image/19.jpeg";
 import github from "../assets/image/github.png";
 import rsschool from "../assets/image/rsschool.png";
-import search from "../assets/image/search.png";
 import aboutUs1 from "../assets/image/aboutUs1.png";
 import aboutUs2 from "../assets/image/aboutUs2.png";
 import aboutUs3 from "../assets/image/aboutUs3.png";
@@ -51,7 +50,6 @@ export {
   img19,
   github,
   rsschool,
-  search,
   aboutUs1,
   aboutUs2,
   aboutUs3,

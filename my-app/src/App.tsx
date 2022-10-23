@@ -7,9 +7,9 @@ import AboutAs from './components/AboutAs/AboutAs';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Form from './components/Form/Form';
+import ReactApi from './React-api/ReactApi';
 
 function App(): JSX.Element {
-  const a: string = ''
   return (
     <BrowserRouter>
       <div className="app">
@@ -20,7 +20,9 @@ function App(): JSX.Element {
             <Route path="/DreamHouse" element={ <Main />} />
             <Route path="/about" element={<AboutAs />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/API" element={<ReactApi />} />
             <Route path="*" element={<NotFound />} />
+
           </Routes>
         </div>
         <Footer />
