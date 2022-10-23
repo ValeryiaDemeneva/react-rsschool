@@ -1,0 +1,31 @@
+.modal-card-api-conteiner {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(240, 248, 255, 0.825);
+}
+
+.hidden {
+  display: none;
+}
+
+.card-container-api {
+  width: 350px;
+  height: 650px;
+  border: 1px solid black;
+  background: white;
+  padding: 0;
+  margin: 20px;
+}
+.card-container-api img {
+  width: 100%;
+  border-bottom: 1px solid black;
+}

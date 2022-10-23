@@ -1,0 +1,48 @@
+
+.advantages-image img{
+width: 50px;
+height: 50px;
+}
+
+.advantages-image {
+    display: flex;
+    justify-content: space-around;
+}
+.advantages-text {
+    display: flex;
+    justify-content: space-around;
+}
+.legality-advantages-text {
+    margin-left: 30px;
+}
+.about-title {
+    text-align: center;
+    margin-top: 55px;
+}
+.about-text {
+    margin: 70px;
+    line-height: 1.5;
+}
+.matters-list-title {
+    text-align: center;
+}
+.matters-list {
+     margin-top: 60px;
+     line-height: 1.5;
+}
+.text-after-list {
+    margin-top: 60px;
+    line-height: 1.5;
+    text-align: center;
+}
+.advantages-title {
+margin-top: 60px;
+text-align: center;
+color: green;
+}
+.advantages-image {
+    margin-top: 60px;
+}
+.advantages-text {
+    color: green;
+}

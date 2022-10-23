@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 60px;
+}
+.cards img {
+  width: 400px;
+  height: 300px;
+}
+.searchBar {
+  width: 250px;
+  height: 30px;
+  border: none;
+}
+.search-button {
+  height: 35px;
+  margin-left: 10px;
+}
+.search-image {
+  width: 25px;
+}
+.search-conteiner {
+    border: 1px solid rgba(0, 0, 0, 0.208);
+}
+.search-image {
+position: relative;
+right: 250px;
+top: 5px;
+}
+.input-button-conteiner {
+    display: flex;
+ flex-direction: row;
+}
